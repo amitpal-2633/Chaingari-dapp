@@ -34,7 +34,7 @@ const useChaingari = (
     // const res = await axios.get(
     //   'https://ipfs.io/ipfs/QmS28E89P3Gz2LZimkKSuJgXGuZEtXG6dhyzxkSbpv6mKU/Chaingari.json',
     // )
-    // setTikToks(res.data);
+    // setChaingari(res.data);
 
     setChaingari(videos)
   }
