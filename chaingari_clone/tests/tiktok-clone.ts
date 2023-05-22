@@ -1,4 +1,4 @@
-import { TikTokClone } from '../target/types/tiktok_clone'
+import { ChaingariClone } from '../target/types/Chaingari_clone'
 import BN from 'bn.js';
 
 const anchor = require('@project-serum/anchor')
@@ -21,12 +21,12 @@ const defaultAccounts = {
 
 // Configure the client to use the local cluster.
 anchor.setProvider(provider)
-const program = anchor.workspace.TikTokClone as Program<TikTokClone>
+const program = anchor.workspace.TikTokClone as Program<ChaingariClone>
 let creatorKey = provider.wallet.publicKey
 let stateSigner
 let videoSigner
 
-describe('tiktok-clone', () => {
+describe('Chaingari-clone', () => {
   it('Create State', async () => {
     ;[stateSigner] = await anchor.web3.PublicKey.findProgramAddress(
       [utf8.encode('state')],

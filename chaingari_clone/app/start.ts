@@ -1,5 +1,5 @@
 
-import { TiktokClone } from "../target/types/tiktok_clone";
+import { ChaingariClone } from "../target/types/Chaingari_clone";
 
 const anchor = require('@project-serum/anchor');
 const { TOKEN_PROGRAM_ID } = require("@solana/spl-token");
@@ -19,7 +19,7 @@ const defaultAccounts = {
 
 // Configure the client to use the local cluster.
 anchor.setProvider(provider);
-const program = anchor.workspace.TiktokClone as Program<TiktokClone>;
+const program = anchor.workspace.TiktokClone as Program<ChaingariClone>;
 let creatorKey = provider.wallet.publicKey;
 let stateSigner;
 
